@@ -1,0 +1,120 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;  /* Change font to Poppins */
+    background-color: #000;  /* Black background */
+    color: #fff;  /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Changed to align the resume at the top */
+    min-height: 100vh;  /* Ensures the body takes the full height */
+}
+
+/* Resume Container */
+.resume {
+    background-color: #1e1e1e; /* Dark gray background */
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto; /* Center the resume on the page */
+}
+
+/* Personal Information */
+#personal-info {
+    background-color: #333;  /* Different background for Personal Info */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a cool effect */
+    border: 2px solid #4CAF50;  /* Green border for Personal Info */
+}
+
+
+#personal-info img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #4CAF50; /* Green border */
+}
+
+#personal-info p {
+    font-size: 1.2em;
+    color: #ddd; /* Light gray text */
+    margin: 5px 0;
+}
+
+/* Other Sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 1.6em;
+    color: #4CAF50; /* Green color for headings */
+    border-bottom: 2px solid #333; /* Darker gray bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600; /* Bold heading */
+}
+
+/* Section Content */
+p {
+    color: #ccc; /* Slightly lighter gray for paragraphs */
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: 300; /* Light text for readability */
+}
+
+/* Skills and Other Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #333; /* Darker gray background */
+    padding: 10px;
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume {
+        padding: 20px;
+    }
+
+    #personal-info img {
+        max-width: 100px; /* Make image smaller on mobile */
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
